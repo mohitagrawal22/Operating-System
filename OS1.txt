@@ -1,0 +1,77 @@
+Q1.Explain what is Loose Coupling and Tight Coupling. Also show the
+examples of code having tight coupling and how you can make it loosely
+coupled.?
+
+Tight coupling means classes and objects are dependent on one another. Loose coupling means reducing the dependencies of a 
+class that uses the different class directly.
+Tight coupling is not good at the test-ability. But loose coupling improves the test ability.
+Tight coupling does not provide the concept of interface. But loose coupling helps us follow the GOF principle of program to
+interfaces, not implementations.
+In Tight coupling, it is not easy to swap the codes between two classes. But it’s much easier to swap other pieces of
+code in loose coupling.
+Tight coupling does not have the changing capability. But loose coupling is highly changeable.
+
+
+
+
+Q2.What is High cohesion and how is it helpful?
+Cohesion refers to how the elements of a module belong together.
+Related code should be close to each other to make it highly cohesive.
+Easy to maintain code usually has high cohesion.
+In High Cohesion the elements within the module are directly related to the functionality that module is meant to provide.
+By keeping high cohesion within our code, we end up trying DRY code and reduce duplication of knowledge in our modules. 
+We can easily design, write, and test our code since the code for a module is all located together and works together.
+High cohesion have a class that does a well-defined job.
+High cohesion gives us better-maintaining facility and Low cohesion results in monolithic classes that are difficult to maintain, 
+understand and reduce re-usability.
+
+Suppose we have a class that adds two numbers, but the same class creates a pop-up window displaying the result. This is an
+example of a low cohesive class because the window and the addition operation don’t have much in common. 
+To make it highly cohesive, we will create a class Display and a class Add. The Display will call Add's method to get the result and
+display it.
+
+Class Add 
+{
+int a = 10;
+int b = 20;
+
+public int addition(int a, int b)
+{
+	this.a = a;
+	this.b = b;
+	return a * b;
+}
+
+}
+
+class Display 
+{
+public static void main(String[] args)
+{
+Add add1 = new Add();
+System.out.println(add1.addition(10, 20));
+}
+
+
+
+
+Q3 State KISS and YAGNI principle.
+
+KISS stads for  Keep It Simple, Stupid. The KISS principle says to keep the code simple and clear, making it easy to understand. 
+computers can only understand 0's and 1's But programming languages are for humans to understand. so keep coding simple and straightforward.
+Also we must keep our methods small. Each method should never be more than 40-50 lines.Each method should only solve one small problem, not many use cases. 
+If you have a lot of conditions in the method, break these out into smaller methods. 
+It will not only be easier to read and maintain, but it can help find bugs a lot faster.
+
+YAGNI Principle
+YAGNI stands for You Ain’t Gonna Need It. It’s a principle from software development methodology of Extreme Programming (XP).
+This principle says that you should not create features that it’s not really necessary.
+This principle it’s similar to the KISS principle, once that both of them aim for a simpler solution. The difference between them it’s
+that YAGNI focus on removing unnecessary functionality and logic, and KISS focus on the complexity
+
+
+
+
+
+
+
