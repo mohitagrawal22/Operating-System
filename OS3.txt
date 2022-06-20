@@ -1,0 +1,76 @@
+Q.1 Explain what HTTP is and how it is Unidirectional?
+
+Stands for "Hypertext Transfer Protocol." HTTP is the protocol used to transfer data over the web. It is part of the Internet 
+protocol suite and defines commands and services used for transmitting webpage data. HTTP uses a server-client model. 
+A client,for example, may be a home computer, laptop, or mobile device.
+The HTTP server is typically a web host running web server software, such as Apacheor IIS. When you access a website, 
+your browser sends a request to the corresponding web server and it responds with an HTTP status code. If the URL is valid
+and the connection is granted, the server will send your browser the webpage and related files.
+Some common HTTP status codes include:
+1. 200 - successful request (the webpage exists)
+2. 401 - unauthorized request (authorization required)
+3. 500 - internal server error (often caused by an incorrect server configuration)
+NOTE: URLs that begin with "http://" are accessed over the standard hypertext transfer
+protocol and use port 80 by default.
+URLs that start with "https://" are accessed over a secure HTTPS connection and often
+use port 443.
+
+
+
+
+
+Q.2 What is IPv4 and IPv6
+IP stands for internet protocol. It is a protocol defined in the TCP/IP model used for sending the packets from source to destination. 
+The main task of IP is to deliver the packets from source to the destination based on the IP addresses available in the packet headers.
+
+Pv4 is a version 4 of IP. It is a current version and the most commonly used IP address.
+It is a 32-bit address written in four numbers separated by 'dot', i.e., periods. This address is unique for each device.For example, 66.94.29.13
+The above example represents the IP address in which each group of numbers separated by periods is called an Octet. 
+Each number in an octet is in the range from 0-255. This address can produce 4,294,967,296 possible unique addresses.
+
+IPv6 is the next generation of IP addresses. The main difference between IPv4 and IPv6 is the address size of IP addresses. 
+The IPv4 is a 32-bit address, whereas IPv6 is a 128-bit hexadecimal address.IPv6 provides a large address space, 
+and it contains a simple header as compared to IPv4. This hexadecimal address contains both numbers and alphabets. 
+Due to the usage of both the numbers and alphabets, IPv6 is capable of producing over 340 undecillion addresses. 
+IPv6 is a 128-bit hexadecimal address made up of 8 sets of 16 bits each, and these 8 sets are separated by a colon.
+
+
+
+
+Q.3 What is DNS?
+
+The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, 
+like nytimes.com or espn.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain
+names to IP addresses so browsers can load Internet resources. Each device connected to the Internet has a unique IP address 
+which other machines use to find the device. DNS servers eliminate the need for humans to memorize IP addresses such as 192.168.1.1 
+(in IPv4), or more complex newer alphanumeric IP addresses such as 2400:cb00:2048:1::c629:d7a2 (in IPv6).
+
+
+
+
+Q.4 Explain what CDN is ?
+
+CDN (Computer Delivery Network) is a system of distributed servers that deliver web pages and other web content to a user based 
+on the geographic locations of the user, the origin of the webpage and a content delivery server. Suppose I am running
+the website outside the UK and I am serving the website all around the world. When the user wants to access my website, then 
+they request to the web server, and users from different countries will have different latency. For example, People who live in
+Australia will have more latency than those who stay in India.Key Terminology of CloudFront CDN.
+Edge Location: Edge location is the location where the content will be cached. Origin: It defines the origin of all the files that CDN will distribute.
+
+
+
+
+Q.5 What is a DeadLock?
+A Deadlock is a situation where each of the process waits for a resource which is being used by some another process. 
+In this situation, none of the process gets executed since the resource it needs, is held by some other process which is also
+waiting for some other resource. It is Like an infinite loop. it is like two process are waiting for each other forever.
+
+lets say P1,P2,P3 are some process and R1,R2,R3 are resources.
+P1 needs R1 to do some task which is being used by P2. P1 stops the process
+since it can't complete without R2. P2 also demands for R1 which is being used by some other process say P3.
+P2 also stops its execution. P3 also demands for R1 which is being used by P1 therefore P3 also stops its execution.
+In this scenario, a cycle is being formed among these three processes. None of the
+process is progressing and they are all waiting. The computer becomes unresponsive
+since all the processes got blocked.
+
+
