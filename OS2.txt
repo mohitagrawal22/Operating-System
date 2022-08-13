@@ -55,6 +55,10 @@ Security − Linux provides user security using authentication features like pas
 protection/ controlled access to specific files/ encryption of data.
 
 
-
+Q4 What is Kernel in Linux ?
+Kernel is the core part of Linux. It is responsible for all major activities of
+this operating system. It consists of various modules and it interacts directly with the
+underlying hardware. Kernel provides the required abstraction to hide low level
+hardware details to system or application programs.
 
 
