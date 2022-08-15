@@ -1,4 +1,4 @@
-Q1.a)Difference between tight coupling and loose coupling.
+
 
 Tight coupling means classes and objects are dependent on one another. Loose coupling means reducing the dependencies of a 
 class that uses the different class directly.
